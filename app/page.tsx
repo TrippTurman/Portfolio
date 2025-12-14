@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
@@ -15,7 +17,12 @@ export default function Home() {
             tools like VexScoutSheet that help teams collect and use data.
           </p>
         </section>
-
+        <Link
+          href="/freelance"
+          className="inline-block px-4 py-3 rounded-md border border-slate-600 hover:border-sky-400 transition"
+        >
+          Freelance services
+        </Link>
         {/* Projects */}
         <section id="projects" className="space-y-6">
           <h2 className="text-2xl font-semibold">Projects</h2>
